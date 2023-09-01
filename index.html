@@ -17,29 +17,97 @@
         <h2>ma documentation</h2>
     </header>
 
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tempore.</p>
+        </div>
+        <div>
+            <p>Corporis deserunt a aperiam dolores asperiores ducimus eos voluptates error.</p>
+        </div>
+        <div>
+            <p>Commodi delectus dolorum perspiciatis, obcaecati unde quibusdam dolor quasi maiores!</p>
+        </div>
+    </div>
+
     <main>
         <section>
             <article>
                 <h3>DATA ATTRIBUTES</h3>
-                <p id="test" data-nom="hugo">hugo</p>
+                <p id="test" data-nom="hugo">jouer</p>
             </article>
 
             
             <article>
                 <h3>FORMS</h3>
                 <form action="">
-                    <label for="">checkbox1</label>
+                    <label for="">checkbox</label> 
+                    <br>
+                    <label for="">checkbox1</label> 
                     <input type="checkbox" name="check" id="">
                     <label for="">checkbox2</label>
                     <input type="checkbox" name="check" id="">
                     <label for="">checkbox3</label>
-                    <input type="checkbox" name="check" id="">
-                    <br>
+                    <input type="checkbox" name="check" id=""> 
+                    <br><br><br>
 
-                    <label for="">Radio</label>
+                    <label for="">Radio</label> 
+                    <br>
                     <input type="radio" name="rad" id="" value="HTML">                    
                     <input type="radio" name="rad" id="" value="CSS">                    
-                    <input type="radio" name="rad" id="" value="JavaScript">                    
+                    <input type="radio" name="rad" id="" value="JavaScript">  
+                    <br><br><br>
+                    
+                    <label for="">Range</label> 
+                    <br>
+                    <label for="vol">Volume (between 0 and 50):</label>
+                    <input type="range" id="vol" name="vol" min="0" max="50"> 
+                    <br><br><br>
+
+                    <label for="">select</label> 
+                    <br>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <br><br><br>
+                    
+                    <label for="favcolor">Select your favorite color:</label>
+                    <br>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    <br><br><br>
+
+                    <label for="datemax">Enter a date before 1980-01-01:</label>
+                    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+                  
+                    <label for="datemin">Enter a date after 2000-01-01:</label>
+                    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+                    
+                    <label for="quantity">Quantity (between 1 and 5):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    <br><br><br>
+
+                    <label for="">list attribute</label><br>
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <br><br><br>
+
+                    <form action="/action_page.php" autocomplete="on">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="fname">Email:</label><br>
+                        <input type="email" id="email" name="email" autocomplete="off">
+                    </form>
+
+                    <input type="submit"> 
+                    <br><br><br>
                 </form>
             </article>
         </section>
