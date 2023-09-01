@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+
+    <title>Ma documentation</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>HTML5 avancé</h1>
+        <h2>ma documentation</h2>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <p id="test" data-nom="hugo">hugo</p>
+            </article>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <i class="far fa-copyright"></i> 2023 Hugo L. Clavinas
+    </footer>
+
+
+    <script>
+        let p_test = document.getElementById('test').dataset.nom;
+        
+        console.log(p_test)
+
+        fetch("./test_data_attributes.json")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            data.forEach(ele => {
+                if(p_test == ele.nom){
+                    alert('sallut hugo')
+                }else{
+                    alert('vous etes qui?')
+                }
+            })
+        })
+
+        
+    </script>
+</body>
+
+</html>
