@@ -20,7 +20,27 @@
     <main>
         <section>
             <article>
+                <h3>DATA ATTRIBUTES</h3>
                 <p id="test" data-nom="hugo">hugo</p>
+            </article>
+
+            
+            <article>
+                <h3>FORMS</h3>
+                <form action="">
+                    <label for="">checkbox1</label>
+                    <input type="checkbox" name="check" id="">
+                    <label for="">checkbox2</label>
+                    <input type="checkbox" name="check" id="">
+                    <label for="">checkbox3</label>
+                    <input type="checkbox" name="check" id="">
+                    <br>
+
+                    <label for="">Radio</label>
+                    <input type="radio" name="rad" id="" value="HTML">                    
+                    <input type="radio" name="rad" id="" value="CSS">                    
+                    <input type="radio" name="rad" id="" value="JavaScript">                    
+                </form>
             </article>
         </section>
     </main>
@@ -43,9 +63,9 @@
             console.log(data)
             data.forEach(ele => {
                 if(p_test == ele.nom){
-                    alert('sallut hugo')
+                    console.log('sallut hugo')
                 }else{
-                    alert('vous etes qui?')
+                    console.log('vous etes qui?')
                 }
             })
         })
